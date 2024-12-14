@@ -24,7 +24,14 @@
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo nav-logo">Web<span>Studio</span></a>
-          <ul class="nav-menu">
+
+          <button class="mobile-menu-btn" type="button">
+            <svg class="mobile-menu-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-items">
             <li class="nav-item"><a class="nav-link" href="#hero">Studio</a></li>
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="#footer">Contacts</a></li>
@@ -52,8 +59,8 @@
       <section id="about-us" class="section about">
         <div class="container">
           <h2 class="visually-hidden">About Us</h2>
-          <ul class="about-list">
-            <li class="about-item">
+          <ul class="about-list card-set">
+            <li class="about-item card-set-item">
               <div class="about-icon-box">
                 <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
@@ -65,7 +72,7 @@
                 creative solution.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about-item card-set-item">
               <div class="about-icon-box">
                 <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
@@ -77,7 +84,7 @@
                 possible time.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about-item card-set-item">
               <div class="about-icon-box">
                 <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
@@ -89,7 +96,7 @@
                 and minimize risk.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about-item card-set-item">
               <div class="about-icon-box">
                 <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -107,10 +114,11 @@
       <section id="team" class="section team">
         <div class="container">
           <h2 class="heading team-heading">Our Team</h2>
-          <ul class="team-list">
-            <li class="team-card">
+          <ul class="team-list card-set">
+            <li class="team-card card-set-item">
               <img
-                src="./images/guerrero.jpg"
+                srcset="./images/team/guerrero_@1x.jpg 1x, ./images/team/guerrero_@2x.jpg 2x"
+                src="./images/team/guerrero_@1x.jpg"
                 alt="Smiling white man with a beard wearing blue shirt"
                 width="264"
                 height="260"
@@ -150,9 +158,10 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team-card card-set-item">
               <img
-                src="./images/ford.jpg"
+                srcset="./images/team/ford_@1x.jpg 1x, ./images/team/ford_@2x.jpg 2x"
+                src="./images/team/ford_@1x.jpg"
                 alt="Smiling white man wearing blue shirt"
                 width="264"
                 height="260"
@@ -192,9 +201,10 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team-card card-set-item">
               <img
-                src="./images/garcia.jpg"
+                srcset="./images/team/garcia_@1x.jpg 1x, ./images/team/garcia_@2x.jpg 2x"
+                src="./images/team/garcia_@1x.jpg"
                 alt="Smiling woman in a pink sweater"
                 width="264"
                 height="260"
@@ -234,9 +244,10 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team-card card-set-item">
               <img
-                src="./images/wilson.jpg"
+                srcset="./images/team/wilson_@1x.jpg 1x, ./images/team/wilson_@2x.jpg 2x"
+                src="./images/team/wilson_@1x.jpg"
                 alt="Smiling man in a gray t-shirt"
                 width="264"
                 height="260"
@@ -282,11 +293,12 @@
       <section id="portfolio" class="section portfolio">
         <div class="container">
           <h2 class="heading portfolio-heading">Our Portfolio</h2>
-          <ul class="portfolio-list">
-            <li class="portfolio-card">
+          <ul class="portfolio-list card-set">
+            <li class="portfolio-card card-set-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-img-1.jpg"
+                  srcset="./images/portfolio/img1_@1x.jpg 1x, ./images/portfolio/img1_@2x.jpg 2x"
+                  src="./images/portfolio/img1_@1x.jpg"
                   alt="Desktop app interface"
                   class="portfolio-card-img"
                   width="360"
@@ -302,10 +314,11 @@
                 <p class="portfolio-card-descr">App</p>
               </div>
             </li>
-            <li class="portfolio-card">
+            <li class="portfolio-card card-set-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-img-2.jpg"
+                  srcset="./images/portfolio/img2_@1x.jpg 1x, ./images/portfolio/img2_@2x.jpg 2x"
+                  src="./images/portfolio/img2_@1x.jpg"
                   alt="Making payment with mobile"
                   class="portfolio-card-img"
                   width="360"
@@ -321,10 +334,11 @@
                 <p class="portfolio-card-descr">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-card">
+            <li class="portfolio-card card-set-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-img-3.jpg"
+                  srcset="./images/portfolio/img3_@1x.jpg 1x, ./images/portfolio/img3_@2x.jpg 2x"
+                  src="./images/portfolio/img3_@1x.jpg"
                   alt="Computer screen with a meditation app"
                   class="portfolio-card-img"
                   width="360"
@@ -340,10 +354,11 @@
                 <p class="portfolio-card-descr">App</p>
               </div>
             </li>
-            <li class="portfolio-card">
+            <li class="portfolio-card card-set-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-img-4.jpg"
+                  srcset="./images/portfolio/img4_@1x.jpg 1x, ./images/portfolio/img4_@2x.jpg 2x"
+                  src="./images/portfolio/img4_@1x.jpg"
                   alt="A car on the road"
                   class="portfolio-card-img"
                   width="360"
@@ -359,10 +374,11 @@
                 <p class="portfolio-card-descr">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-card">
+            <li class="portfolio-card card-set-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-img-5.jpg"
+                  srcset="./images/portfolio/img5_@1x.jpg 1x, ./images/portfolio/img5_@2x.jpg 2x"
+                  src="./images/portfolio/img5_@1x.jpg"
                   alt="Mobile screen with illustrations"
                   class="portfolio-card-img"
                   width="360"
@@ -378,10 +394,11 @@
                 <p class="portfolio-card-descr">Design</p>
               </div>
             </li>
-            <li class="portfolio-card">
+            <li class="portfolio-card card-set-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-img-6.jpg"
+                  srcset="./images/portfolio/img6_@1x.jpg 1x, ./images/portfolio/img6_@2x.jpg 2x"
+                  src="./images/portfolio/img6_@1x.jpg"
                   alt="Smiling student with a phone"
                   class="portfolio-card-img"
                   width="360"
@@ -447,7 +464,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-container">
+        <div class="footer-form-container">
           <p class="footer-title">Subscribe</p>
           <form action="submit" class="footer-form">
             <label class="footer-input-label">
@@ -529,15 +546,70 @@
                   <use href="./images/icons.svg#checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="form-agreement-link" href="" target="_blank" rel="noopener noreferrer">
-                Privacy Policy
-              </a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="form-agreement-link" href="" target="_blank" rel="noopener noreferrer">
+                  Privacy Policy
+                </a>
+              </span>
             </label>
           </div>
           <button type="submit" class="btn btn-large">Send</button>
         </form>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <button class="close-mobile-menu-btn">
+        <svg class="close-mobile-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="menu-nav">
+        <li class="menu-nav-item"><a href="#hero" class="menu-nav-link active">Studio</a></li>
+        <li class="menu-nav-item"><a href="#portfolio" class="menu-nav-link">Portfolio</a></li>
+        <li class="menu-nav-item"><a href="#footer" class="menu-nav-link"></a>Contacts</li>
+      </ul>
+      <ul class="menu-contacts">
+        <li class="menu-contact">
+          <a href="mailto:info@devstudio.com" class="menu-contact-link active"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="menu-contact">
+          <a href="tel:+110001111111" class="menu-contact-link">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+      <ul class="menu-socials-list">
+        <li class="social-item">
+          <a href="https://instagram.com" target="_blank" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://twitter.com" target="_blank" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://facebook.com" target="_blank" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://linkedin.com" target="_blank" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
